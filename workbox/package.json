@@ -1,0 +1,19 @@
+{
+  "name": "workbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js",
+    "serve": "http-server -p 18000 -c0 ./src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "workbox-build": "^3.2.0"
+  }
+}

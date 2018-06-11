@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo Workbox</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div>
+				<a><span>Tab </span> 1</a>
+				<div>
+					<a>Link 1</a>
+					<a>Link 2</a>
+					<a>Link 3</a>
+					<a>Link 4</a>
+					<a>Link 5</a>
+					<a>Link 6</a>
+				</div>
+			</div>
+			<div>
+				<a><span>Tab </span>2</a>
+				<div>
+					<a>Link 1</a>
+					<a>Link 2</a>
+					<a>Link 3</a>
+					<a>Link 4</a>
+					<a>Link 5</a>
+					<a>Link 6</a>
+				</div>
+			</div>
+			<div>
+				<a><span>Tab </span>3</a>
+				<div>
+					<a>Link 1</a>
+					<a>Link 2</a>
+					<a>Link 3</a>
+					<a>Link 4</a>
+					<a>Link 5</a>
+					<a>Link 6</a>
+				</div>
+			</div>
+			<div>
+				<a><span>Tab </span>4</a>
+				<div>
+					<a>Link 1</a>
+					<a>Link 2</a>
+					<a>Link 3</a>
+					<a>Link 4</a>
+					<a>Link 5</a>
+					<a>Link 6</a>
+				</div>
+			</div>
+			<div>
+				<a><span>Tab </span>5</a>
+				<div>
+					<a>Link 1</a>
+					<a>Link 2</a>
+					<a>Link 3</a>
+					<a>Link 4</a>
+					<a>Link 5</a>
+					<a>Link 6</a>
+				</div>
+			</div>
+			<div>
+				<a><span>Tab </span>6</a>
+				<div>
+					<a>Link 1</a>
+					<a>Link 2</a>
+					<a>Link 3</a>
+					<a>Link 4</a>
+					<a>Link 5</a>
+					<a>Link 6</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section class="body">
+		Workbox
+	</section>
+	<script type="text/javascript" src="app.js"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+	       window.addEventListener('load', () => {
+	          navigator.serviceWorker
+	          	.register('/sw.js')
+	          	.then(()=> {
+	          		console.log("Service worker registered.");
+	          	}, (err)=> {
+	          		console.error("Service worker registeration failed.", err);
+	          	});
+	       });
+	     } else {
+	     	console.info("Oops!! No support for Service Worker");
+	     }
+	</script>
+</body>
+</html>
